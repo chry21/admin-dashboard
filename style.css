@@ -191,33 +191,35 @@ body {
 
 .main-content span {
     font-size: 30px;
+    color: white;
 }
 
 .main-content #subtitle1 {
     position: relative;
-    top: 30px;
+    top: 20px;
     left: 65px;
 }
 
 .main-content #subtitle2 {
     position: relative;
     left: 1105px;
-    top: 35px;
+    top: 20px;
 }
 
 .main-content #subtitle3 {
     position: relative;
-    top: 415px;
+    top: 410px;
     left: 1037px;
 }
  
 .main-content-grid {
-    margin-top: 35px;
+    margin-top: 25px;
     margin-left: 60px;
     display: grid;
     grid-template-columns: repeat(2, 550px) 300px;
     grid-template-rows: repeat(2, 330px);    
-    gap: 50px;
+    column-gap: 50px;
+    row-gap: 60px;
 }
 
 .main-content img {
@@ -232,5 +234,78 @@ body {
 }
 
 .main-content-grid div {
-    background-color: black;
+    background-color: #0a1f42;
+    border-radius: 10px;
 }
+
+.main-content-grid .tasks {
+    font-size: 16px;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main-content-grid .tasks div {
+    border-bottom: 2px solid #05142d;  
+    border-radius: 0;
+}
+
+.main-content-grid .tasks p {
+    position: relative;
+    left: 15px;
+}
+
+.main-content-grid .stats {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-content-grid .stats div {
+    border-radius: 10px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    border: 4px solid transparent;
+}
+
+.main-content-grid .stats p {
+    font-size: 28px;
+}
+
+.main-content-grid .stats .completed h2, 
+.main-content-grid .stats .completed p {
+    color: green;
+}
+
+.main-content-grid .stats .in-progress h2, 
+.main-content-grid .stats .in-progress p {
+    color: #6366f0;
+}
+
+.main-content-grid .stats .unitialized h2, 
+.main-content-grid .stats .unitialized p {
+    color: red;
+}
+
+.main-content-grid .stats .completed:hover {
+    border: 4px solid green;
+}
+
+.main-content-grid .stats .in-progress:hover {
+    border: 4px solid #6366f0;
+}
+
+.main-content-grid .stats .unitialized:hover {
+    border: 4px solid red;
+}
+
+
+
+
+
+
